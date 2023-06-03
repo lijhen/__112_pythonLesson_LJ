@@ -17,8 +17,8 @@ dataFrame.columns = ['站點','總車數','可借數','行政區',
                      '時間','地址','可還','狀態']
 df1 = dataFrame.set_index('站點') #改了index，要有變數接收全新的資料
 
-min,max = st.slider('選擇可借數量：', 0, 50,(1,50))
-mask = df1['可借數'] <= max
+min,max = st.slider('選擇可借數量：', 0, 100,(1,100))
+mask =( df1['可借數'] <= max ) & (df1['可借數'] >= min )
 mask_dataFrame = df1[mask]
 count_sna = mask_dataFrame['可借數'].count()
 st.write('下列符合條件的樣站共', count_sna,'站')
