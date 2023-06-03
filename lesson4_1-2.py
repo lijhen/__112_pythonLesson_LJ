@@ -18,3 +18,5 @@ mask = dataFrame['sbi'] <= 3
 mask_dataFrame = dataFrame[mask]
 
 st.dataframe(mask_dataFrame)
+# 終端機輸入 streamlit run lesson4_1-2.py
+# ctrl+C 離開
