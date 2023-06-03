@@ -13,4 +13,4 @@ vscode開啟專案，不用安裝extention(git、dev container)
 - 整理資料 pandas
 - 顯示、互動資料
      上傳資料 streamlit
-          *st.write()*
+          *st.write()* 
