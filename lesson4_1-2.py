@@ -19,4 +19,5 @@ mask_dataFrame = dataFrame[mask]
 
 st.dataframe(mask_dataFrame)
 # 終端機輸入 streamlit run lesson4_1-2.py
+# 跑出網頁表單
 # ctrl+C 離開
