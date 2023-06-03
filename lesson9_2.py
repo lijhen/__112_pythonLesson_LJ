@@ -7,5 +7,5 @@ student_dataFrame = pd.DataFrame(data = score_array,
              index= range(1,51),
              columns=['國文','英文','數學','自然','社會'])
 st.header('3年5班成績單')
-st.table(student_dataFrame)
-st.dataframe(student_dataFrame,width=800)
+st.table(student_dataFrame)                 #有多少呈現多少
+st.dataframe(student_dataFrame,width=800)   #動態表格，可捲動
