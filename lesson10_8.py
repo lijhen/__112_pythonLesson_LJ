@@ -13,9 +13,11 @@ else:
 
 
 dataFrame = pd.DataFrame(data=all_data,columns=['sna','tot','sbi','sarea','mday','ar','bemp','act'])
-dataFrame.columns = ['站點','總車數','可借數','行政區','時間','地址','可還','狀態']
-mask = dataFrame['sbi'] <= 3
-mask_dataFrame = dataFrame[mask]
+dataFrame.columns = ['站點','總車數','可借數','行政區',
+                     '時間','地址','可還','狀態']
+df1 = dataFrame.set_index('站點') #改了index，要有變數接收全新的資料
+mask = df1['可借數'] <= 3
+mask_dataFrame = df1[mask]
 
 st.dataframe(mask_dataFrame)
 
