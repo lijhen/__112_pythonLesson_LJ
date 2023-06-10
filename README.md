@@ -18,3 +18,7 @@ vscode開啟專案，不用安裝extention(git、dev container)
 雲端>github>repo>codespace>
 本地端要下載vs code 
      設定>open in VScode desktop
+
+     檔案更新不同步相互衝突
+     >>解決衝突方法
+     >>直接砍掉codespace
