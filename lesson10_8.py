@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 import streamlit as st
-
+#下載youbike的即時資料
 url = 'https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json'
 response = requests.request('GET',url)
 if response.status_code == 200:
@@ -11,7 +11,7 @@ if response.status_code == 200:
 else:
     print(f"連線失敗:{response.status_code}")
 
-
+#將資料轉成dataFrame
 dataFrame = pd.DataFrame(data=all_data,columns=['sna','tot','sbi','sarea','mday','ar','bemp','act'])
 dataFrame.columns = ['站點','總車數','可借數','行政區',
                      '時間','地址','可還','狀態']
