@@ -20,7 +20,7 @@ for code in selected_codes:
         code_stock_dataFrame_sorted = code_stock_dataFrame.sort_index(ascending=False)
         
         st.subheader(code)
-        st.dataframe(code_stock_dataFrame_sorted,width=1024)
+        st.dataframe(code_stock_dataFrame_sorted,width=2048)
         st.line_chart(code_stock_dataFrame,y='Adj Close')
         st.divider()
 #pip install yfinance
