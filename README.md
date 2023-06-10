@@ -18,7 +18,7 @@ vscode開啟專案，不用安裝extention(git、dev container)
 - 整理資料 pandas
 - 顯示、互動資料
      上傳資料 streamlit
->          *st.write()* 
+>          st.write() 
 ---
 雲端>github>repo>codespace> \
 本地端要下載vs code 
@@ -36,10 +36,10 @@ vscode開啟專案，不用安裝extention(git、dev container)
      >>直接砍掉原本codespace
      >>重建一個新的codespace
      >>要重新安裝套件 pip list 檢視目前安裝套件
-     >pip install requests pandas streamlit
+>pip install requests pandas streamlit
      >>紀錄 過去安裝的套件 pip freeze >requirements.txt
 ---
      >>dev container
      >>隱藏檔 (.json)
      >>刪掉 「//」 打開 
-     >"postCreatCommand":"pip3  install -- user -r requirement.txt" 
+>"postCreatCommand":"pip3  install -- user -r requirement.txt" 
