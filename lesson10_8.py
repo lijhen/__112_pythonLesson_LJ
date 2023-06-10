@@ -18,12 +18,13 @@ dataFrame.columns = ['站點','總車數','可借數','行政區',
 df1 = dataFrame.set_index('站點') #改了index，要有變數接收全新的資料
 group_data = dataFrame.groupby('行政區').sum()
 areas = df1['行政區'].unique()
-options = st.selectbox('行政區：',areas)
+
 
 min,max = st.slider('選擇可借數量：', 0, 100,(1,100))
 mask =( df1['可借數'] <= max ) & (df1['可借數'] >= min )
 mask_dataFrame = df1[mask]
 count_sna = mask_dataFrame['可借數'].count()
+options = st.selectbox('行政區：',areas)
 st.write('下列符合條件的樣站共', count_sna,'站')
 st.dataframe(mask_dataFrame)
 
