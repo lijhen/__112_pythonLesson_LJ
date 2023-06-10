@@ -22,7 +22,8 @@ vscode開啟專案，不用安裝extention(git、dev container)
 左下角><codespace
 重新連接codespace 選取之前連過的即可
 ---
-     檔案更新不同步相互衝突
+檔案更新不同步相互衝突
+
      >>解決衝突方法
      >>直接砍掉原本codespace
      >>重建一個新的codespace
