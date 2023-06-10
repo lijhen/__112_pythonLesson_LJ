@@ -17,7 +17,7 @@ dataFrame.columns = ['站點','總車數','可借數','行政區',
                      '時間','地址','可還','狀態']
 df1 = dataFrame.set_index('站點') #改了index，要有變數接收全新的資料
 group_data = dataFrame.groupby('行政區').sum()
-areas = group_data.index.to_numpy().tolist()
+areas = df1['行政區'].unique()
 options = st.selectbox('行政區：',areas)
 
 min,max = st.slider('選擇可借數量：', 0, 100,(1,100))
