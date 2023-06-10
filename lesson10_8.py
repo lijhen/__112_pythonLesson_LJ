@@ -28,4 +28,5 @@ count_sna = mask_dataFrame['可借數'].count()
 st.write('下列符合條件的樣站共', count_sna,'站')
 st.dataframe(mask_dataFrame)
 options = st.selectbox('行政區：',areas)
-
+mask = df1['行政區']==options
+st.write(options)
