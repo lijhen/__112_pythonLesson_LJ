@@ -14,3 +14,7 @@ vscode開啟專案，不用安裝extention(git、dev container)
 - 顯示、互動資料
      上傳資料 streamlit
           *st.write()* 
+---
+雲端>github>repo>codespace>
+本地端要下載vs code 
+     設定>open in VScode
