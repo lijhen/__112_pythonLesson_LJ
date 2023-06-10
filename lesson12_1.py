@@ -9,3 +9,4 @@ with st.sidebar:
 for code in selected_codes:
         code = code[:4]+'.TW'
         st.write(code)
+#pip install yfinance
