@@ -38,3 +38,8 @@ vscode開啟專案，不用安裝extention(git、dev container)
      >>要重新安裝套件 pip list 檢視目前安裝套件
      >>pip install requests pandas streamlit
      >>紀錄 過去安裝的套件 pip freeze >requirements.txt
+-
+     >>dev container
+     >>隱藏檔 (.json)
+     >>刪掉 「//」 打開 
+     "postCreatCommand":"pip3  install -- user -r requirement.txt" 
