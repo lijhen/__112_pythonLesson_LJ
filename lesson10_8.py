@@ -24,8 +24,8 @@ min,max = st.slider('選擇可借數量：', 0, 100,(1,100))
 mask =( df1['可借數'] <= max ) & (df1['可借數'] >= min )
 mask_dataFrame = df1[mask]
 count_sna = mask_dataFrame['可借數'].count()
-options = st.selectbox('行政區：',areas)
+
 st.write('下列符合條件的樣站共', count_sna,'站')
 st.dataframe(mask_dataFrame)
-
+options = st.selectbox('行政區：',areas)
 
